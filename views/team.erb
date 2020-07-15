@@ -6,8 +6,12 @@
  </head>
  <body>
  
+    <h1>Team Name: <%= "#{@team_hash[:name]}" %></h1>
 
-
+     <% @team_hash.each do |key, value|%>
+        <%# <%= binding.pry %> 
+        <h2><%= "#{key}: #{value}" %></h2>
+       <%end%>
  </body>
 </html>
 
